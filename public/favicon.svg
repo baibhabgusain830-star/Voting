@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070e" />
+      <stop offset="100%" stop-color="#0e1528" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="8"/>
+
+  <!-- Tech Corner Accents -->
+  <path d="M 64 120 L 64 64 L 120 64" fill="none" stroke="#00f0ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 448 120 L 448 64 L 392 64" fill="none" stroke="#00f0ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 64 392 L 64 448 L 120 448" fill="none" stroke="#00f0ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 448 392 L 448 448 L 392 448" fill="none" stroke="#00f0ff" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Central Stylized G Monogram -->
+  <path d="M 350 180 C 320 135 270 120 220 120 C 140 120 100 180 100 256 C 100 332 140 392 220 392 C 295 392 345 345 355 270 L 220 270 L 220 220 L 405 220 C 408 232 410 244 410 256 C 410 355 330 440 220 440 C 110 440 48 355 48 256 C 48 157 110 72 220 72 C 295 72 360 110 398 168 Z" fill="url(#cyanGlow)"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "grevix-aftercode-voting",
+  "version": "1.0.0",
+  "description": "Grevix AfterCode 2026 Official Repository Voting Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.100.0",
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env*.local
+.vercel
+private_data/*.sqlite*
+private_data/*.sql
+private_data/aftercode_votes.json

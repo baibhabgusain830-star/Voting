@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "private_data/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/aftercode",
+      "destination": "/aftercode.html"
+    },
+    {
+      "source": "/",
+      "destination": "/aftercode.html"
+    }
+  ]
+}

@@ -1,0 +1,3610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grevix AfterCode 2026 — Community Repository Voting | Grevix</title>
+  <meta name="description" content="Explore repositories submitted for Grevix AfterCode 2026. Read, discover and vote for the builder whose work inspires you.">
+  <meta name="keywords" content="Grevix AfterCode 2026, Grevix Voting, Solo Hackathon, Unstop Hackathon, Open Source Builders, Student Developers, Grevix">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://www.grevix.online/aftercode">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grevix AfterCode 2026 — Builders Deserve To Be Seen">
+  <meta property="og:description" content="Explore repositories submitted for Grevix AfterCode 2026. Read, discover and vote for the builder whose work inspires you.">
+  <meta property="og:url" content="https://www.grevix.online/aftercode">
+  <meta property="og:site_name" content="Grevix">
+  <meta property="og:image" content="https://www.grevix.online/assets/blackhole.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Grevix AfterCode 2026 Community Voting">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Grevixofficial">
+  <meta name="twitter:creator" content="@Grevixofficial">
+  <meta name="twitter:title" content="Grevix AfterCode 2026 — Community Voting">
+  <meta name="twitter:description" content="Explore repositories submitted for Grevix AfterCode 2026. Every participant gets 1 vote — give it to a builder whose work inspires you.">
+  <meta name="twitter:image" content="https://www.grevix.online/assets/blackhole.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+  <link rel="apple-touch-icon" href="/favicon.jpg">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.grevix.online/aftercode/#webpage",
+        "url": "https://www.grevix.online/aftercode",
+        "name": "Grevix AfterCode 2026 — Community Voting",
+        "description": "Explore repositories submitted for Grevix AfterCode 2026. Read, discover and vote for the builder whose work inspires you.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.grevix.online/#website",
+          "name": "Grevix",
+          "url": "https://www.grevix.online/"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       AfterCode 2026 Voting Page — Scoped Styles (Reusing Grevix Design System)
+       Tokens inherited from styles.css:
+         --bg-light (#F2F2F0), --bg-dark (#0A0A0F), --text-dark (#111111),
+         --text-light (#F8F8F8), --text-muted-dark (#666666),
+         --border-light (#D4D4D4), --accent-blue (#3B82F6),
+         --font-display, --font-body, --font-mono
+       ========================================================================== */
+    .aftercode-page {
+      --ac-surface: #FFFFFF;
+      --ac-surface-subtle: #F7F7F5;
+      --ac-border: var(--border-light, #D4D4D4);
+      --ac-border-subtle: #E4E4E1;
+      background-color: var(--bg-light, #F2F2F0);
+      color: var(--text-dark, #111111);
+      min-height: 100vh;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    /* Top Header / Navbar — Reuses Grevix .navbar, .logo-mark, .nav-center, .nav-right */
+    .aftercode-page .navbar {
+      width: 100%;
+      border-bottom: 1px solid var(--ac-border);
+      background-color: var(--bg-light, #F2F2F0);
+    }
+
+    .aftercode-page .mobile-menu-toggle {
+      border-color: var(--ac-border);
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-core-login-btn {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      padding: 8px 16px;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-core-login-btn:hover {
+      border-color: var(--text-dark, #111111);
+      background-color: var(--text-dark, #111111);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    /* Main Container — Matches Grevix .about-main-container / .dark-content width & rhythm */
+    .ac-container {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 40px 80px;
+      flex: 1;
+    }
+
+    /* Hero Section — Matches Grevix .about-hero-grid proportions & typography */
+    .ac-hero-section {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 56px;
+      align-items: stretch;
+      padding: 8px 0 40px;
+      border-bottom: 1px solid var(--ac-border);
+      margin-bottom: 28px;
+    }
+
+    .ac-hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ac-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4.4vw, 4.15rem);
+      font-weight: 800;
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: var(--text-dark, #111111);
+      margin: 0 0 22px 0;
+    }
+
+    .ac-headline .text-seen {
+      color: var(--text-muted-dark, #666666);
+    }
+
+    .ac-hero-desc {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.65;
+      color: var(--text-muted-dark, #666666);
+      max-width: 560px;
+      margin-bottom: 24px;
+    }
+
+    .ac-short-rule {
+      width: 40px;
+      height: 1px;
+      background-color: var(--ac-border);
+      margin-bottom: 18px;
+    }
+
+    .ac-motto-inline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--text-muted-dark, #666666);
+      text-transform: uppercase;
+    }
+
+    /* Right Hero Panel */
+    .ac-hero-right {
+      border-left: 1px solid var(--ac-border);
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ac-panel-tag {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+
+    .ac-panel-copy {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      line-height: 1.68;
+      color: var(--text-muted-dark, #666666);
+      margin-bottom: 20px;
+      max-width: 390px;
+    }
+
+    .ac-panel-manifesto {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      line-height: 1.85;
+      color: var(--text-dark, #111111);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* Voting Dates & Stats Bar */
+    .ac-stats-bar {
+      position: relative;
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .ac-corner {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border: 1px solid var(--text-dark, #111111);
+      pointer-events: none;
+    }
+    .ac-corner.tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+    .ac-corner.tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+    .ac-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+    .ac-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+    .ac-stats-items {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      align-items: center;
+      gap: 32px;
+      flex: 1;
+    }
+
+    .ac-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-right: 28px;
+      border-right: 1px solid var(--ac-border-subtle);
+    }
+
+    .ac-stat-item:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .ac-stat-icon {
+      color: var(--text-muted-dark, #666666);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ac-stat-number {
+      font-family: var(--font-mono);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      line-height: 1.15;
+    }
+
+    .ac-stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--text-muted-dark, #666666);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .ac-stat-overline {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 500;
+      color: var(--text-muted-dark, #666666);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .ac-stat-date {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+    }
+
+    .ac-stat-subtime {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted-dark, #666666);
+      margin-top: 2px;
+    }
+
+    .ac-event-details-btn {
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 13px 22px;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      transition: opacity 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .ac-event-details-btn:hover {
+      opacity: 0.88;
+    }
+
+    /* Main Workspace Grid: Left Explorer + Right Sidebar */
+    .ac-workspace-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* Search & Sort Controls */
+    .ac-controls-card {
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .ac-search-sort-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .ac-search-box {
+      position: relative;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .ac-search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted-dark, #666666);
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .ac-search-input {
+      width: 100%;
+      height: 39px;
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 9px 36px 9px 40px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-dark, #111111);
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .ac-search-input::placeholder {
+      color: #888888;
+    }
+
+    .ac-search-input:focus {
+      border-color: var(--text-dark, #111111);
+    }
+
+    .ac-search-clear {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-muted-dark, #666666);
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 4px;
+      display: none;
+    }
+
+    .ac-search-clear:hover {
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-sort-wrapper {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      background-color: var(--ac-surface);
+      padding: 0 12px;
+      height: 39px;
+      min-width: 240px;
+      gap: 6px;
+    }
+
+    .ac-sort-label {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--text-muted-dark, #666666);
+      white-space: nowrap;
+    }
+
+    .ac-sort-select {
+      border: none;
+      background: transparent;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      outline: none;
+      cursor: pointer;
+      flex: 1;
+      padding: 8px 0;
+    }
+
+    /* Domain Filter Pills Row */
+    .ac-filters-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .ac-domain-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
+    .ac-domain-btn {
+      font-family: var(--font-mono);
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 6px 11px;
+      border-radius: 2px;
+      border: 1px solid var(--ac-border-subtle);
+      background-color: var(--ac-surface-subtle);
+      color: var(--text-muted-dark, #666666);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-domain-btn:hover {
+      border-color: var(--ac-border);
+      color: var(--text-dark, #111111);
+      background-color: #EAEAE7;
+    }
+
+    .ac-domain-btn.active {
+      background-color: var(--bg-dark, #0A0A0F);
+      border-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    .ac-results-count {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted-dark, #666666);
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    .ac-table-card {
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .ac-table-scroll {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .ac-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .ac-table thead th {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-muted-dark, #666666);
+      text-transform: uppercase;
+      text-align: left;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--ac-border);
+      background-color: #FAFAFA;
+    }
+
+    .ac-table thead th.col-rank { width: 46px; text-align: center; }
+    .ac-table thead th.col-repo { width: 42%; }
+    .ac-table thead th.col-builder { width: 19%; }
+    .ac-table thead th.col-tech { width: 22%; }
+    .ac-table thead th.col-action { width: 116px; text-align: right; padding-right: 16px; }
+
+    .ac-table tbody tr {
+      border-bottom: 1px solid var(--ac-border-subtle);
+      transition: background-color 0.15s ease;
+    }
+
+    .ac-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .ac-table tbody tr:hover {
+      background-color: #FAF9F7;
+    }
+
+    .ac-table tbody tr.voted-row {
+      background-color: #F0FDF4;
+    }
+
+    .ac-table td {
+      padding: 15px 16px;
+      vertical-align: middle;
+    }
+
+    .ac-rank-cell {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted-dark, #666666);
+      text-align: center;
+    }
+
+    /* Repository Cell */
+    .ac-repo-cell {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .ac-repo-avatar {
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 2px;
+      border: 1px solid var(--ac-border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-light, #F8F8F8);
+    }
+
+    .ac-repo-avatar img,
+    .ac-builder-avatar img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ac-repo-info {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .ac-repo-title-line {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .ac-repo-name-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      cursor: pointer;
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.25;
+      transition: color 0.15s ease;
+    }
+
+    .ac-repo-name-btn:hover {
+      color: var(--accent-blue, #3B82F6);
+    }
+
+    .ac-domain-tag-inline {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--text-muted-dark, #666666);
+      border: 1px solid var(--ac-border-subtle);
+      background-color: var(--ac-surface-subtle);
+      padding: 1px 6px;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    .ac-repo-desc {
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      line-height: 1.45;
+      color: var(--text-muted-dark, #666666);
+      margin-top: 3px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    /* Builder Cell */
+    .ac-builder-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .ac-builder-avatar {
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1px solid var(--ac-border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--text-light, #F8F8F8);
+    }
+
+    /* Technologies Cell */
+    .ac-tech-list {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .ac-tech-badge {
+      font-family: var(--font-mono);
+      font-size: 0.67rem;
+      font-weight: 500;
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface-subtle);
+      border: 1px solid var(--ac-border-subtle);
+      padding: 3px 8px;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    /* Votes Cell */
+    .ac-votes-cell {
+      font-family: var(--font-mono);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      text-align: center;
+    }
+
+    /* Action Cell */
+    .ac-action-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      position: relative;
+    }
+
+    .ac-vote-btn {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 6px 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-vote-btn:hover:not(:disabled) {
+      border-color: var(--bg-dark, #0A0A0F);
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    .ac-vote-btn.voted {
+      background-color: var(--bg-dark, #0A0A0F);
+      border-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      cursor: default;
+    }
+
+    .ac-vote-btn:disabled:not(.voted) {
+      opacity: 0.48;
+      cursor: not-allowed;
+    }
+
+    .ac-more-btn {
+      width: 28px;
+      height: 30px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted-dark, #666666);
+      border-radius: 3px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-more-btn:hover {
+      background-color: var(--ac-surface-subtle);
+      color: var(--text-dark, #111111);
+    }
+
+    /* More Options Popover Menu — Opens upward on bottom rows to avoid clipping */
+    .ac-popover-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 4px);
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      box-shadow: 0 8px 20px rgba(10, 10, 15, 0.12);
+      min-width: 195px;
+      z-index: 60;
+      padding: 4px;
+      display: none;
+      text-align: left;
+    }
+
+    .ac-table tbody tr:nth-last-child(-n+2):not(:first-child) .ac-popover-menu {
+      top: auto;
+      bottom: calc(100% + 4px);
+    }
+
+    .ac-popover-menu.open {
+      display: block;
+    }
+
+    .ac-popover-item {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 8px 10px;
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      color: var(--text-dark, #111111);
+      text-align: left;
+      cursor: pointer;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .ac-popover-item:hover {
+      background-color: var(--ac-surface-subtle);
+    }
+
+    /* Pagination */
+    .ac-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 26px;
+      font-family: var(--font-mono);
+      flex-wrap: wrap;
+    }
+
+    .ac-page-btn {
+      min-width: 32px;
+      height: 32px;
+      padding: 0 8px;
+      border: 1px solid transparent;
+      background-color: transparent;
+      color: var(--text-muted-dark, #666666);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      border-radius: 3px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-page-btn:hover:not(:disabled):not(.active) {
+      border-color: var(--ac-border);
+      background-color: var(--ac-surface);
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-page-btn.active {
+      background-color: var(--bg-dark, #0A0A0F);
+      border-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    .ac-page-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .ac-page-ellipsis {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted-dark, #666666);
+      padding: 0 4px;
+    }
+
+    /* Right Sidebar Cards */
+    .ac-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .ac-side-card {
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 22px;
+    }
+
+    .ac-side-heading {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-dark, #111111);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .ac-user-profile-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .ac-user-initial-badge {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 50%;
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ac-user-details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .ac-user-name {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      line-height: 1.2;
+    }
+
+    .ac-user-email {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted-dark, #666666);
+      margin-top: 2px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .ac-signout-icon-btn {
+      background: none;
+      border: 1px solid transparent;
+      color: var(--text-muted-dark, #666666);
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .ac-signout-icon-btn:hover {
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface-subtle);
+      border-color: var(--ac-border-subtle);
+    }
+
+    .ac-verified-banner {
+      background-color: #ECFDF5;
+      border: 1px solid #D1FAE5;
+      border-radius: 3px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .ac-verified-banner.ineligible {
+      background-color: #FEF2F2;
+      border-color: #FECACA;
+    }
+
+    .ac-verified-banner.ineligible .ac-verified-icon {
+      color: #DC2626;
+    }
+
+    .ac-verified-banner.ineligible .ac-verified-title {
+      color: #7F1D1D;
+    }
+
+    .ac-verified-banner.ineligible .ac-verified-sub {
+      color: #B91C1C;
+    }
+
+    .ac-verified-banner.unauth {
+      background-color: var(--ac-surface-subtle);
+      border-color: var(--ac-border);
+    }
+
+    .ac-verified-banner.unauth .ac-verified-icon {
+      color: var(--text-muted-dark, #666666);
+    }
+
+    .ac-verified-banner.unauth .ac-verified-title {
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-verified-banner.unauth .ac-verified-sub {
+      color: var(--text-muted-dark, #666666);
+    }
+
+    .ac-verified-icon {
+      color: #059669;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .ac-verified-title {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #064E3B;
+      line-height: 1.25;
+    }
+
+    .ac-verified-sub {
+      font-family: var(--font-body);
+      font-size: 0.71rem;
+      color: #047857;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .ac-inline-alert {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      line-height: 1.45;
+      padding: 10px 12px;
+      border-radius: 3px;
+      margin-top: 12px;
+      display: none;
+    }
+
+    .ac-inline-alert.error {
+      display: block;
+      background-color: #FEF2F2;
+      border: 1px solid #FECACA;
+      color: #991B1B;
+    }
+
+    .ac-inline-alert.success {
+      display: block;
+      background-color: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #065F46;
+    }
+
+    .ac-side-divider {
+      height: 1px;
+      background-color: var(--ac-border-subtle);
+      margin: 18px 0;
+    }
+
+    .ac-vote-progress-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .ac-vote-progress-title {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-vote-progress-count {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-progress-track {
+      width: 100%;
+      height: 6px;
+      background-color: var(--ac-border-subtle);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .ac-progress-fill {
+      height: 100%;
+      width: 0%;
+      background-color: var(--bg-dark, #0A0A0F);
+      border-radius: 999px;
+      transition: width 0.25s ease;
+    }
+
+    .ac-vote-status-box {
+      background-color: var(--ac-surface-subtle);
+      border: 1px solid var(--ac-border-subtle);
+      border-radius: 3px;
+      padding: 13px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .ac-vote-status-icon {
+      color: var(--text-muted-dark, #666666);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .ac-vote-status-title {
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--text-dark, #111111);
+      line-height: 1.3;
+    }
+
+    .ac-vote-status-desc {
+      font-family: var(--font-body);
+      font-size: 0.71rem;
+      line-height: 1.45;
+      color: var(--text-muted-dark, #666666);
+      margin-top: 3px;
+    }
+
+    /* Voting Rules List */
+    .ac-rules-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-dark, #111111);
+      margin-bottom: 18px;
+    }
+
+    .ac-rules-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .ac-rule-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--ac-border-subtle);
+    }
+
+    .ac-rule-item:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .ac-rule-num {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      width: 14px;
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+
+    .ac-rule-text {
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      line-height: 1.48;
+      color: var(--text-muted-dark, #666666);
+    }
+
+    .ac-rule-text strong {
+      color: var(--text-dark, #111111);
+      font-weight: 700;
+    }
+
+    /* Quote Card — Uses Grevix --font-body instead of third-party serif */
+    .ac-quote-card {
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 24px 22px;
+    }
+
+    .ac-quote-text {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--text-dark, #111111);
+      margin-bottom: 14px;
+    }
+
+    .ac-quote-author {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--text-muted-dark, #666666);
+      text-transform: uppercase;
+    }
+
+    /* Scoped Modals */
+    .ac-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(10, 10, 15, 0.65);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      overflow-y: auto;
+    }
+
+    .ac-modal-backdrop.open {
+      display: flex;
+    }
+
+    .ac-modal-box {
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      max-width: 480px;
+      width: 100%;
+      max-height: calc(100vh - 28px);
+      overflow-y: auto;
+      padding: 20px 22px;
+      position: relative;
+      margin: auto;
+      box-sizing: border-box;
+      box-shadow: 0 16px 32px rgba(10, 10, 15, 0.22);
+    }
+
+    .ac-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: none;
+      border: none;
+      color: var(--text-muted-dark, #666666);
+      font-size: 1.25rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .ac-modal-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: var(--accent-blue, #3B82F6);
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    .ac-modal-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-dark, #111111);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      padding-right: 24px;
+      text-transform: uppercase;
+      word-break: break-word;
+    }
+
+    .ac-modal-desc {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      line-height: 1.55;
+      color: var(--text-muted-dark, #666666);
+      margin-bottom: 14px;
+    }
+
+    .ac-modal-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .ac-btn-secondary {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 3px;
+      border: 1px solid var(--ac-border);
+      background-color: var(--ac-surface);
+      color: var(--text-dark, #111111);
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .ac-btn-secondary:hover {
+      background-color: var(--ac-surface-subtle);
+      border-color: var(--text-dark, #111111);
+    }
+
+    .ac-btn-primary {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 3px;
+      border: 1px solid var(--bg-dark, #0A0A0F);
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+
+    .ac-btn-primary:hover {
+      opacity: 0.88;
+    }
+
+    /* Toast Notification */
+    .ac-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      border: 1px solid var(--border-dark, #22222A);
+      border-radius: 3px;
+      padding: 12px 18px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      z-index: 250;
+      transform: translateY(120%);
+      opacity: 0;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      max-width: min(360px, calc(100vw - 32px));
+    }
+
+    .ac-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer — Reuses Grevix .site-footer structure on light surface */
+    .aftercode-page .site-footer {
+      width: 100%;
+      max-width: 1600px;
+      margin: auto auto 0;
+      padding: 32px 40px;
+      border-top: 1px solid var(--ac-border);
+      background-color: var(--bg-light, #F2F2F0);
+      color: var(--text-muted-dark, #666666);
+    }
+
+    .aftercode-page .site-footer .footer-right a:hover {
+      color: var(--text-dark, #111111);
+    }
+
+    /* Keyboard Accessibility & Interactive Enhancements */
+    .aftercode-page button:focus-visible,
+    .aftercode-page a:focus-visible,
+    .aftercode-page input:focus-visible,
+    .aftercode-page select:focus-visible {
+      outline: 2px solid var(--bg-dark, #0A0A0F);
+      outline-offset: 2px;
+    }
+
+    .ac-repo-github-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 3px;
+      color: var(--text-muted-dark, #666666);
+      border: 1px solid transparent;
+      text-decoration: none;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .ac-repo-github-link:hover {
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface-subtle);
+      border-color: var(--ac-border);
+    }
+
+    .ac-builder-link {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-dark, #111111);
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      transition: color 0.15s ease;
+    }
+
+    .ac-builder-link:hover {
+      color: var(--accent-blue, #3B82F6);
+      text-decoration: underline;
+    }
+
+    button.ac-tech-badge {
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    button.ac-tech-badge:hover {
+      background-color: #EAEAE7;
+      border-color: var(--ac-border);
+      color: var(--text-dark, #111111);
+    }
+
+    button.ac-tech-badge.active-tech {
+      background-color: var(--bg-dark, #0A0A0F);
+      border-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    .ac-reshuffle-btn {
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      font-weight: 600;
+      color: var(--text-dark, #111111);
+      background-color: var(--ac-surface-subtle);
+      border: 1px solid var(--ac-border);
+      border-radius: 3px;
+      padding: 6px 10px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ac-reshuffle-btn:hover {
+      background-color: var(--bg-dark, #0A0A0F);
+      border-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+    }
+
+    /* Loading & Error Status Strip */
+    .ac-status-strip {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 16px;
+      margin-bottom: 14px;
+      border-radius: 3px;
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      background-color: var(--ac-surface);
+      border: 1px solid var(--ac-border);
+      color: var(--text-dark, #111111);
+    }
+
+    .ac-status-strip.loading {
+      display: flex;
+    }
+
+    .ac-status-strip.error {
+      display: flex;
+      background-color: #FEF2F2;
+      border-color: #FECACA;
+      color: #991B1B;
+    }
+
+    .ac-status-retry-btn {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: 1px solid #DC2626;
+      background-color: var(--ac-surface);
+      color: #991B1B;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .ac-status-retry-btn:hover {
+      background-color: #DC2626;
+      color: var(--text-light, #F8F8F8);
+    }
+
+    /* Empty State Box */
+    .ac-empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      font-family: var(--font-mono);
+    }
+
+    .ac-empty-title {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark, #111111);
+      margin-bottom: 6px;
+    }
+
+    .ac-empty-sub {
+      font-size: 0.76rem;
+      color: var(--text-muted-dark, #666666);
+      margin-bottom: 16px;
+    }
+
+    /* Project Preview Highlights in Detail Modal */
+    .ac-preview-box {
+      background-color: var(--bg-dark, #0A0A0F);
+      color: var(--text-light, #F8F8F8);
+      border: 1px solid var(--border-dark, #22222A);
+      border-radius: 3px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      line-height: 1.5;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .ac-preview-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: var(--text-muted-light, #888899);
+      border-bottom: 1px solid var(--border-dark, #22222A);
+      padding-bottom: 7px;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+
+    .ac-preview-list {
+      margin: 8px 0 0 16px;
+      padding: 0;
+      color: #D4D4D8;
+    }
+
+    .ac-preview-list li {
+      margin-bottom: 4px;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints — Desktop, Tablet (<= 1120px / <= 900px) & Mobile (<= 680px)
+       Ensures zero horizontal overflow and clean layout across all viewports
+       ========================================================================== */
+    @media (max-width: 1120px) {
+      .ac-workspace-grid {
+        grid-template-columns: 1fr;
+      }
+      .ac-sidebar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .ac-stats-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .ac-stats-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .ac-stat-item:nth-child(2) {
+        border-right: none;
+      }
+      .ac-event-details-btn {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .ac-container {
+        padding: 32px 24px 64px;
+      }
+      .ac-hero-section {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .ac-hero-right {
+        border-left: none;
+        border-top: 1px solid var(--ac-border);
+        padding-left: 0;
+        padding-top: 24px;
+      }
+      .ac-table th,
+      .ac-table td {
+        padding: 12px 10px;
+      }
+      .ac-table thead th.col-action {
+        padding-right: 12px;
+      }
+    }
+
+    /* Mobile Responsive Table & Controls (<= 680px): Zero horizontal scroll */
+    @media (max-width: 680px) {
+      .ac-container {
+        padding: 24px 16px 56px;
+      }
+      .ac-stats-bar {
+        padding: 16px;
+      }
+      .ac-stats-items {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .ac-stat-item {
+        border-right: none;
+        border-bottom: 1px solid var(--ac-border-subtle);
+        padding-right: 0;
+        padding-bottom: 12px;
+      }
+      .ac-stat-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .ac-search-sort-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .ac-sort-wrapper {
+        width: 100%;
+        min-width: 0;
+      }
+      .ac-motto-inline {
+        gap: 12px;
+      }
+      /* Stack table rows cleanly on mobile so all 6 columns fit 100% viewport width */
+      .ac-table,
+      .ac-table tbody {
+        display: block;
+        width: 100%;
+      }
+      .ac-table thead {
+        display: none;
+      }
+      .ac-table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px 12px;
+        padding: 16px 14px;
+      }
+      .ac-table tbody td {
+        padding: 0;
+        border: none;
+      }
+      .ac-table tbody td.ac-rank-cell {
+        order: 1;
+        width: auto;
+        font-size: 0.72rem;
+        background-color: var(--ac-surface-subtle);
+        border: 1px solid var(--ac-border-subtle);
+        padding: 2px 7px;
+        border-radius: 2px;
+      }
+      .ac-table tbody td:nth-child(2) {
+        order: 3;
+        width: 100%;
+      }
+      .ac-table tbody td:nth-child(3) {
+        order: 4;
+        width: auto;
+      }
+      .ac-table tbody td:nth-child(4) {
+        order: 5;
+        width: 100%;
+      }
+      .ac-table tbody td:nth-child(5) {
+        order: 2;
+        margin-left: auto;
+      }
+      .aftercode-page .site-footer {
+        padding: 24px 16px !important;
+      }
+      .ac-modal-box {
+        padding: 20px 16px;
+      }
+      .ac-modal-actions {
+        flex-wrap: wrap;
+      }
+      .ac-modal-actions .ac-btn-primary,
+      .ac-modal-actions .ac-btn-secondary {
+        flex: 1 1 auto;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  </style>
+  <!-- Instant Navigation Engine -->
+  <script>if (typeof Document !== 'undefined' && !Document.prototype.closest) { Document.prototype.closest = function () { return null; }; }</script>
+  
+</head>
+<body class="about-page-wrap aftercode-page">
+  <!-- Side label -->
+  <div class="side-label">GREVIX CO</div>
+
+  <!-- Top Navigation — Reuses Exact Grevix Header & Logo Mark -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="https://www.grevix.online/" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="wordmark">GREVIX</span>
+          <span class="tagline">STUDENT DRIVEN. IMPACT FOCUSED.</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="nav-center">
+      <a href="https://www.grevix.online/">HOME</a>
+      <a href="https://www.grevix.online/about">ABOUT</a>
+      <a href="https://www.grevix.online/projects">PROJECTS</a>
+      <a href="https://www.grevix.online/events">EVENTS</a>
+      <a href="https://www.grevix.online/community">COMMUNITY</a>
+      <a href="https://www.grevix.online/blog">BLOG</a>
+      <a href="https://www.grevix.online/ambassador">AMBASSADOR</a>
+      <a href="/" class="active">AFTERCODE<span class="active-dot-nav"></span></a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="https://discord.gg/HMFaCYeYa" target="_blank" rel="noopener noreferrer" class="join-btn">JOIN GREVIX &#8599;</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="ac-container">
+
+    <!-- Hero Section -->
+    <section class="ac-hero-section">
+      <div class="ac-hero-left">
+        <div>
+          <div class="breadcrumb" style="margin-bottom: 20px;">
+            <span class="breadcrumb-number">// AFTERCODE 2026</span>
+            <span class="breadcrumb-line"></span>
+            <span class="breadcrumb-dot"></span>
+          </div>
+
+          <h1 class="ac-headline">
+            BUILDERS<br>
+            DESERVE TO BE <span class="text-seen">SEEN.</span>
+          </h1>
+
+          <p class="ac-hero-desc">
+            Explore repositories submitted for Grevix AfterCode 2026.<br>
+            Read, discover and vote for the builder whose work inspires you.
+          </p>
+        </div>
+
+        <div>
+          <div class="ac-short-rule"></div>
+          <div class="ac-motto-inline">
+            <span>ONE IDEA.</span>
+            <span>TWENTY FOUR HOURS.</span>
+            <span>A STRONGER TOMORROW.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ac-hero-right">
+        <div class="ac-panel-tag">// COMMUNITY VOTING</div>
+        <p class="ac-panel-copy">
+          Every participant gets 1 vote &mdash; give it to a builder (not yourself). Help great ideas get the recognition they deserve.
+        </p>
+        <div class="ac-short-rule"></div>
+        <div class="ac-panel-manifesto">
+          EXPLORE.<br>
+          SUPPORT.<br>
+          DISCOVER.<br>
+          BUILD TOGETHER.
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Voting Window Bar -->
+    <section class="ac-stats-bar" aria-label="Event Metrics and Voting Window">
+      <div class="ac-corner tl"></div>
+      <div class="ac-corner tr"></div>
+      <div class="ac-corner bl"></div>
+      <div class="ac-corner br"></div>
+
+      <div class="ac-stats-items">
+        <!-- Stat 1: Registered Builders -->
+        <div class="ac-stat-item">
+          <div class="ac-stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="ac-stat-number" id="registeredBuildersStatNumber">441</div>
+            <div class="ac-stat-label">REGISTERED BUILDERS</div>
+          </div>
+        </div>
+
+        <!-- Stat 2: Repositories -->
+        <div class="ac-stat-item">
+          <div class="ac-stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="ac-stat-number" id="totalReposStatNumber">441</div>
+            <div class="ac-stat-label">REPOSITORIES</div>
+          </div>
+        </div>
+
+        <!-- Stat 3: Voting Opens -->
+        <div class="ac-stat-item">
+          <div class="ac-stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="ac-stat-overline">VOTING OPENS</div>
+            <div class="ac-stat-date">OCT 11, 2026</div>
+            <div class="ac-stat-subtime">4:00 PM (IST)</div>
+          </div>
+        </div>
+
+        <!-- Stat 4: Voting Ends -->
+        <div class="ac-stat-item">
+          <div class="ac-stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="ac-stat-overline">VOTING ENDS</div>
+            <div class="ac-stat-date">OCT 11, 2026</div>
+            <div class="ac-stat-subtime">7:00 PM (IST)</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://www.grevix.online/events" class="ac-event-details-btn">
+        <span>EVENT DETAILS</span>
+        <span>&#8599;</span>
+      </a>
+    </section>
+
+    <!-- Main Two-Column Workspace -->
+    <div class="ac-workspace-grid">
+
+      <!-- Left Column: Explorer + Project Table + Pagination -->
+      <section aria-label="Submitted Repositories">
+
+        <!-- Search, Sort & Domain Filters -->
+        <div class="ac-controls-card">
+          <div class="ac-search-sort-row">
+            <div class="ac-search-box">
+              <span class="ac-search-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <input
+                type="text"
+                id="repoSearchInput"
+                class="ac-search-input"
+                placeholder="Search repositories, builders, technologies..."
+                autocomplete="off"
+              >
+              <button type="button" class="ac-search-clear" id="btnClearSearch" aria-label="Clear search">&times;</button>
+            </div>
+          </div>
+
+          <div class="ac-filters-row">
+            <div class="ac-domain-pills" id="domainFilterGroup" role="tablist" aria-label="Filter repositories by primary domain">
+              <button type="button" class="ac-domain-btn active" data-domain="All" role="tab" aria-selected="true">All</button>
+              <button type="button" class="ac-domain-btn" data-domain="AI/ML" role="tab" aria-selected="false">AI/ML</button>
+              <button type="button" class="ac-domain-btn" data-domain="Web Development" role="tab" aria-selected="false">Web Development</button>
+              <button type="button" class="ac-domain-btn" data-domain="Mobile" role="tab" aria-selected="false">Mobile</button>
+              <button type="button" class="ac-domain-btn" data-domain="Data Science" role="tab" aria-selected="false">Data Science</button>
+              <button type="button" class="ac-domain-btn" data-domain="Cybersecurity" role="tab" aria-selected="false">Cybersecurity</button>
+              <button type="button" class="ac-domain-btn" data-domain="Open Source" role="tab" aria-selected="false">Open Source</button>
+              <button type="button" class="ac-domain-btn" data-domain="Productivity" role="tab" aria-selected="false">Productivity</button>
+              <button type="button" class="ac-domain-btn" data-domain="Hardware/IoT" role="tab" aria-selected="false">Hardware/IoT</button>
+              <button type="button" class="ac-domain-btn" data-domain="Tools" role="tab" aria-selected="false">Tools</button>
+              <button type="button" class="ac-domain-btn" data-domain="Other" role="tab" aria-selected="false">Other</button>
+            </div>
+
+            <div class="ac-results-count" id="resultsCountLabel" aria-live="polite">441 results</div>
+          </div>
+        </div>
+
+        <!-- Server Sync Loading / Error Banner -->
+        <div class="ac-status-strip" id="acStatusStrip" role="status" aria-live="polite">
+          <span id="acStatusText">Syncing live repository catalog &amp; session...</span>
+          <button type="button" class="ac-status-retry-btn" id="btnRetrySync" style="display: none;">RETRY SYNC &#8635;</button>
+        </div>
+
+        <!-- Repositories Table -->
+        <div class="ac-table-card">
+          <div class="ac-table-scroll">
+            <table class="ac-table">
+              <thead>
+                <tr>
+                  <th class="col-rank">#</th>
+                  <th class="col-repo">REPOSITORY</th>
+                  <th class="col-builder">BUILDER</th>
+                  <th class="col-tech">TECHNOLOGIES</th>
+                  <th class="col-action">ACTION</th>
+                </tr>
+              </thead>
+              <tbody id="repoTableBody">
+                <!-- Populated dynamically by scoped script -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="ac-pagination" id="paginationNav" aria-label="Repository pages">
+          <!-- Populated dynamically -->
+        </nav>
+
+      </section>
+
+      <!-- Right Sidebar: Signed-in User Status, Vote Progress, Voting Rules & Quote -->
+      <aside class="ac-sidebar" aria-label="Voter Status and Rules">
+
+        <!-- Card 1: Signed In & Vote Progress -->
+        <div class="ac-side-card">
+          <div class="ac-side-heading" id="sidebarAuthHeading">SIGNED IN</div>
+
+          <div class="ac-user-profile-row">
+            <div class="ac-user-initial-badge" id="voterAvatarBadge">?</div>
+            <div class="ac-user-details">
+              <div class="ac-user-name" id="voterNameLabel">Not Signed In</div>
+              <div class="ac-user-email" id="voterEmailLabel">Sign in with your Unstop email</div>
+            </div>
+            <button type="button" class="ac-signout-icon-btn" id="btnSwitchAccount" title="Sign in or manage voter session" aria-label="Sign in or manage voter session">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="ac-verified-banner unauth" id="verifiedBanner">
+            <span class="ac-verified-icon" id="verifiedBannerIcon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </span>
+            <div style="flex: 1;">
+              <div class="ac-verified-title" id="verifiedBannerTitle">Sign in to verify eligibility</div>
+              <div class="ac-verified-sub" id="verifiedBannerSub">Use the email registered on Unstop for AfterCode 2026.</div>
+            </div>
+          </div>
+
+          <button type="button" class="ac-btn-primary" id="btnSidebarSignIn" style="width: 100%; margin-bottom: 18px; justify-content: center; display: flex; align-items: center; gap: 6px;">
+            <span>VERIFY UNSTOP ACCOUNT &rarr;</span>
+          </button>
+
+          <div class="ac-side-divider"></div>
+
+          <div class="ac-vote-progress-header">
+            <span class="ac-vote-progress-title">YOUR VOTE</span>
+            <span class="ac-vote-progress-count" id="voteProgressCount">0 / 1</span>
+          </div>
+
+          <div class="ac-progress-track">
+            <div class="ac-progress-fill" id="voteProgressBar"></div>
+          </div>
+
+          <div class="ac-vote-status-box" id="voteStatusBox">
+            <span class="ac-vote-status-icon" id="voteStatusIcon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </span>
+            <div>
+              <div class="ac-vote-status-title" id="voteStatusTitle">You haven't voted yet.</div>
+              <div class="ac-vote-status-desc" id="voteStatusDesc">
+                Explore repositories and support a builder whose work inspires you.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Voting Rules -->
+        <div class="ac-side-card">
+          <div class="ac-rules-header">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <span>VOTING RULES</span>
+          </div>
+
+          <ol class="ac-rules-list">
+            <li class="ac-rule-item">
+              <span class="ac-rule-num">1</span>
+              <span class="ac-rule-text">Sign in with the same account used for Unstop registration.</span>
+            </li>
+            <li class="ac-rule-item">
+              <span class="ac-rule-num">2</span>
+              <span class="ac-rule-text">You get <strong>1 vote</strong> only.</span>
+            </li>
+            <li class="ac-rule-item">
+              <span class="ac-rule-num">3</span>
+              <span class="ac-rule-text">You cannot vote for your own repository.</span>
+            </li>
+            <li class="ac-rule-item">
+              <span class="ac-rule-num">4</span>
+              <span class="ac-rule-text">Your vote is final and cannot be changed.</span>
+            </li>
+            <li class="ac-rule-item">
+              <span class="ac-rule-num">5</span>
+              <span class="ac-rule-text">Voting opens after all submissions are complete.</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Card 3: Quote Card -->
+        <div class="ac-quote-card">
+          <p class="ac-quote-text">
+            &ldquo;Great ideas don&rsquo;t win by chance. They win when people take the time to look closer.&rdquo;
+          </p>
+          <div class="ac-quote-author">&mdash; GREVIX</div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Footer — Reuses Grevix .site-footer -->
+  <footer class="site-footer">
+    <div class="footer-left" style="display: flex; align-items: center; gap: 12px;">
+      <div class="logo" style="width: 24px; height: 24px; border: 1px solid var(--border-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-dark);">N</div>
+      <span>&copy; 2026 GREVIX COMMUNITY</span>
+    </div>
+    <div class="footer-center">
+      [ BUILT WITH PURPOSE. DRIVEN BY STUDENTS. ]
+    </div>
+    <div class="footer-right" style="position: relative; z-index: 20;">
+      <a href="https://www.grevix.online/privacy">PRIVACY</a>
+      <a href="https://www.grevix.online/terms">TERMS</a>
+      <a href="mailto:contact@grevix.online">CONTACT</a>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+    </div>
+  </footer>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer-overlay" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="https://www.grevix.online/" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="wordmark">GREVIX</span>
+          <span class="tagline">STUDENT DRIVEN. IMPACT FOCUSED.</span>
+        </div>
+      </a>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer-nav">
+      <a href="https://www.grevix.online/">HOME <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/about">ABOUT <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/projects">PROJECTS <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/events">EVENTS <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/community">COMMUNITY <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/blog">BLOG <span>&#8594;</span></a>
+      <a href="https://www.grevix.online/ambassador">AMBASSADOR <span>&#8594;</span></a>
+      <a href="/" class="active">AFTERCODE <span>&#8594;</span></a>
+      <a href="https://discord.gg/HMFaCYeYa" target="_blank" rel="noopener noreferrer" class="mobile-drawer-join">JOIN GREVIX &#8599;</a>
+    </nav>
+  </div>
+
+  <!-- Vote Confirmation Modal -->
+  <div class="ac-modal-backdrop" id="voteConfirmModal" role="dialog" aria-modal="true" aria-labelledby="voteModalTitle">
+    <div class="ac-modal-box">
+      <button type="button" class="ac-modal-close" id="btnCloseVoteModal" aria-label="Close">&times;</button>
+      <div class="ac-modal-eyebrow">// CONFIRM COMMUNITY VOTE</div>
+      <h3 class="ac-modal-title" id="voteModalTitle">CAST YOUR VOTE</h3>
+      <p class="ac-modal-desc" id="voteModalDesc">
+        You are about to cast your 1 community vote. Remember: your vote is final and cannot be changed once submitted.
+      </p>
+      <div style="background: var(--ac-surface-subtle); border: 1px solid var(--ac-border); border-radius: 3px; padding: 12px 14px; font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-dark);">
+        <div><strong>Repository:</strong> <span id="confirmRepoName">focusflow</span></div>
+        <div style="margin-top: 4px; color: var(--text-muted-dark);"><strong>Builder:</strong> @<span id="confirmBuilderHandle">saanvi.codes</span></div>
+      </div>
+      <div class="ac-inline-alert" id="voteModalAlert" role="alert"></div>
+      <div class="ac-modal-actions">
+        <button type="button" class="ac-btn-secondary" id="btnCancelVote">CANCEL</button>
+        <button type="button" class="ac-btn-primary" id="btnConfirmVote">CONFIRM FINAL VOTE &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repository Details & Preview Modal -->
+  <div class="ac-modal-backdrop" id="repoDetailModal" role="dialog" aria-modal="true" aria-labelledby="detailModalTitle">
+    <div class="ac-modal-box">
+      <button type="button" class="ac-modal-close" id="btnCloseDetailModal" aria-label="Close">&times;</button>
+      <div class="ac-modal-eyebrow" id="detailModalCategory">// AI/ML</div>
+      <h3 class="ac-modal-title" id="detailModalTitle">mindmesh</h3>
+
+      <!-- Project Idea Overview -->
+      <div class="ac-preview-box" id="detailModalPreviewBox">
+        <div class="ac-preview-header">
+          <span>PROJECT IDEA // OVERVIEW</span>
+          <span id="detailModalRankBadge">VERIFIED</span>
+        </div>
+        <div id="detailModalPreviewSummary"></div>
+        <ul class="ac-preview-list" id="detailModalPreviewHighlights"></ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 7px; background: var(--ac-surface-subtle); border: 1px solid var(--ac-border); border-radius: 3px; padding: 11px 13px; font-family: var(--font-mono); font-size: 0.72rem;">
+        <div><strong>Primary Domain:</strong> <span id="detailModalDomain"></span></div>
+        <div><strong>Builder:</strong> <a href="#" id="detailModalBuilder" target="_blank" rel="noopener noreferrer" style="color: var(--text-dark); font-weight: 700; text-decoration: underline;"></a></div>
+        <div><strong>GitHub Profile:</strong> <a href="#" id="detailModalGithubProfile" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); text-decoration: underline; word-break: break-all;"></a></div>
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;"><strong>Technologies:</strong> <span id="detailModalTech" class="ac-tech-list"></span></div>
+        <div><strong>Submitted:</strong> <span id="detailModalSubmitted"></span></div>
+      </div>
+      <div class="ac-modal-actions">
+        <button type="button" class="ac-btn-secondary" id="btnCloseDetailFooter">CLOSE</button>
+        <button type="button" class="ac-btn-primary" id="btnVoteFromDetail">VOTE FOR REPOSITORY +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Voter / Unstop & Google Auth Modal -->
+  <div class="ac-modal-backdrop" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountModalTitle">
+    <div class="ac-modal-box">
+      <button type="button" class="ac-modal-close" id="btnCloseAccountModal" aria-label="Close">&times;</button>
+      <div class="ac-modal-eyebrow">// UNSTOP &amp; SUPABASE AUTHENTICATION</div>
+      <h3 class="ac-modal-title" id="accountModalTitle">SIGN IN TO VOTE</h3>
+      <p class="ac-modal-desc">
+        Sign in with the exact email address used for your Unstop registration in Grevix AfterCode 2026. The server verifies your eligibility against the official participant list.
+      </p>
+
+      <!-- Google OAuth Button (Uses existing Supabase project when NEXT_PUBLIC_SUPABASE_ANON_KEY is configured) -->
+      <div style="margin-bottom: 16px;">
+        <button type="button" id="btnGoogleSignIn" class="ac-btn-secondary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <span>CONTINUE WITH GOOGLE</span>
+        </button>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted-dark);">
+        <div style="flex: 1; height: 1px; background: var(--ac-border);"></div>
+        <span>OR VERIFY UNSTOP EMAIL</span>
+        <div style="flex: 1; height: 1px; background: var(--ac-border);"></div>
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <label for="inputVoterEmail" style="display: block; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; color: var(--text-muted-dark); margin-bottom: 5px;">UNSTOP REGISTERED EMAIL *</label>
+        <input type="email" id="inputVoterEmail" class="ac-search-input" style="padding-left: 12px;" placeholder="e.g. yourname@gmail.com" autocomplete="email">
+      </div>
+      <div style="margin-bottom: 14px;">
+        <label for="inputVoterRegId" style="display: block; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; color: var(--text-muted-dark); margin-bottom: 5px;">UNSTOP REGISTRATION ID (OPTIONAL)</label>
+        <input type="text" id="inputVoterRegId" class="ac-search-input" style="padding-left: 12px;" placeholder="e.g. UF5RU455">
+      </div>
+
+      <div class="ac-inline-alert" id="accountModalAlert" role="alert"></div>
+
+      <div class="ac-modal-actions" style="justify-content: space-between;">
+        <button type="button" class="ac-btn-secondary" id="btnSignOutSession" style="display: none;">SIGN OUT</button>
+        <div style="display: flex; gap: 8px; margin-left: auto;">
+          <button type="button" class="ac-btn-secondary" id="btnCancelAccountModal">CLOSE</button>
+          <button type="button" class="ac-btn-primary" id="btnSaveVoterSession">VERIFY &amp; SIGN IN &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="ac-toast" id="acToast" role="status" aria-live="polite"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- 1. Mobile Drawer Menu ---
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+      function openDrawer() {
+        if (mobileDrawer) mobileDrawer.classList.add('active');
+      }
+      function closeDrawer() {
+        if (mobileDrawer) mobileDrawer.classList.remove('active');
+      }
+
+      if (mobileMenuToggle) mobileMenuToggle.addEventListener('click', openDrawer);
+      if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeDrawer);
+
+      // --- 2. Realistic Avatar SVG Data URI Generator ---
+      function makeAvatarSvg(initials, bg1, bg2, accent) {
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="${bg1}"/>
+              <stop offset="100%" stop-color="${bg2}"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="32" fill="url(#g)"/>
+          <circle cx="32" cy="24" r="10" fill="${accent}" fill-opacity="0.85"/>
+          <path d="M14 56c3-11 11-16 18-16s15 5 18 16" fill="${accent}" fill-opacity="0.85"/>
+          <text x="32" y="37" text-anchor="middle" fill="#ffffff" font-family="JetBrains Mono, monospace" font-weight="700" font-size="14" opacity="0.22">${initials}</text>
+        </svg>`;
+        return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+      }
+
+      // --- 3. Canonical Domain Taxonomy ---
+      // Strictly 1 primaryDomain per project; secondary tags live in `technologies`.
+      const VALID_DOMAINS = [
+        'All',
+        'AI/ML',
+        'Web Development',
+        'Mobile',
+        'Data Science',
+        'Cybersecurity',
+        'Open Source',
+        'Productivity',
+        'Hardware/IoT',
+        'Tools',
+        'Other'
+      ];
+
+      // --- 4. Server-Backed Repositories Catalog (Populated via /api/aftercode/state) ---
+      function normalizeRepositoryItem(item) {
+        const cleanName = String(item.name || '').trim();
+        const builder = String(item.builder || '').trim();
+        const builderName = String(item.builderName || builder).trim();
+        const description = String(item.description || '').trim();
+        const primaryDomain = String(item.primaryDomain || 'Other').trim();
+        const technologies = Array.isArray(item.technologies) ? item.technologies : [];
+        const githubHandle = builder.replace(/[^a-zA-Z0-9._-]/g, '-');
+        const avatarBg = Array.isArray(item.avatarBg) ? item.avatarBg : ['#0f172a', '#1e293b', '#94a3b8'];
+        const builderBg = Array.isArray(item.builderBg) ? item.builderBg : ['#090d16', '#1e293b', '#64748b'];
+        const repoInitials = cleanName.slice(0, 2).toUpperCase();
+        const builderInitials = builder.slice(0, 2).toUpperCase();
+
+        return {
+          ...item,
+          name: cleanName,
+          description,
+          builder,
+          builderName,
+          primaryDomain,
+          technologies,
+          avatarBg,
+          builderBg,
+          _repoAvatarUri: makeAvatarSvg(repoInitials, avatarBg[0], avatarBg[1], avatarBg[2]),
+          _builderAvatarUri: makeAvatarSvg(builderInitials, builderBg[0], builderBg[1], builderBg[2]),
+          _searchIndex: `${cleanName} ${description} ${builder} ${builderName} ${technologies.join(' ')}`.toLowerCase(),
+          githubUrl: item.githubUrl || `https://github.com/${githubHandle}/${cleanName}`,
+          builderGithubUrl: item.builderGithubUrl || `https://github.com/${githubHandle}`,
+          previewSummary:
+            item.previewSummary ||
+            `${cleanName} is a ${primaryDomain} submission built by ${builderName} (@${builder}) for Grevix AfterCode 2026 using ${technologies.join(', ')}.`,
+          highlights:
+            Array.isArray(item.highlights) && item.highlights.length > 0
+              ? item.highlights
+              : [
+                  `Primary Domain: ${primaryDomain} — engineered for 24-hour rapid prototyping.`,
+                  `Core Stack: ${technologies.join(' + ')} with reproducible local setup.`,
+                  `Open Source Repository: github.com/${githubHandle}/${cleanName}`
+                ]
+        };
+      }
+
+      let REPOSITORIES = Array.isArray(window.__AFTERCODE_INITIAL_STATE__?.repositories)
+        ? window.__AFTERCODE_INITIAL_STATE__.repositories.map(normalizeRepositoryItem)
+        : [];
+
+      // --- 5. State Management (Preserves Search, Domain Filter, Sort & Random Order across Pagination) ---
+      const ITEMS_PER_PAGE = 12;
+
+      let state = {
+        searchQuery: '',
+        domain: 'All',
+        sortBy: 'random',
+        currentPage: 1,
+        randomOrderRankById: null,
+        isLoadingInitialCatalog: REPOSITORIES.length === 0,
+        isSyncing: false,
+        syncError: null,
+        session: {
+          authenticated: false,
+          eligible: false,
+          eligibilityReason: '',
+          user: null,
+          vote: null
+        },
+        votingWindow: {
+          status: 'OPEN',
+          isOpen: true,
+          opensAt: '2026-10-11T16:00:00+05:30',
+          endsAt: '2026-10-11T19:00:00+05:30',
+          message: ''
+        },
+        authConfig: {
+          googleOAuthConfigured: false,
+          supabaseUrl: null,
+          supabaseAnonKey: null
+        },
+        pendingVoteRepoId: null,
+        isSubmittingVote: false,
+        lastFocusedElement: null,
+        initialHashChecked: false
+      };
+
+      // Generate a Fisher-Yates permutation of repository IDs without mutating project identities
+      function generateRandomOrderMap() {
+        const ids = REPOSITORIES.map(r => r.id);
+        for (let i = ids.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = ids[i];
+          ids[i] = ids[j];
+          ids[j] = temp;
+        }
+        const map = new Map();
+        ids.forEach((id, idx) => map.set(id, idx + 1));
+        state.randomOrderRankById = map;
+      }
+
+      // Initialize random order map from the server's per-viewer shuffled order if available
+      if (REPOSITORIES.length > 0) {
+        const initialMap = new Map();
+        REPOSITORIES.forEach((r, idx) => initialMap.set(r.id, idx + 1));
+        state.randomOrderRankById = initialMap;
+      }
+
+      // Restore URL query state if present
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const domainParam = params.get('domain');
+        const qParam = params.get('q');
+        const sortParam = params.get('sort');
+        const pageParam = parseInt(params.get('page') || '1', 10);
+
+        if (domainParam && VALID_DOMAINS.includes(domainParam)) {
+          state.domain = domainParam;
+        }
+        if (qParam) {
+          state.searchQuery = qParam;
+        }
+        if (sortParam && ['random', 'newest', 'alpha'].includes(sortParam)) {
+          state.sortBy = sortParam;
+        }
+        if (!isNaN(pageParam) && pageParam >= 1) {
+          state.currentPage = pageParam;
+        }
+      } catch (e) {}
+
+      // Sync UI controls with initial state
+      const repoSearchInput = document.getElementById('repoSearchInput');
+      const btnClearSearch = document.getElementById('btnClearSearch');
+      const repoSortSelect = document.getElementById('repoSortSelect');
+      const btnReshuffleOrder = document.getElementById('btnReshuffleOrder');
+      const domainFilterGroup = document.getElementById('domainFilterGroup');
+      const acStatusStrip = document.getElementById('acStatusStrip');
+      const acStatusText = document.getElementById('acStatusText');
+      const btnRetrySync = document.getElementById('btnRetrySync');
+      const registeredBuildersStatEl = document.getElementById('registeredBuildersStatNumber');
+      const totalReposStatEl = document.getElementById('totalReposStatNumber');
+
+      function updateSortUiControls() {
+        if (repoSortSelect) {
+          repoSortSelect.value = state.sortBy;
+        }
+        if (btnReshuffleOrder) {
+          btnReshuffleOrder.style.display = state.sortBy === 'random' ? 'inline-flex' : 'none';
+        }
+      }
+
+      if (repoSearchInput && state.searchQuery) {
+        repoSearchInput.value = state.searchQuery;
+        if (btnClearSearch) btnClearSearch.style.display = 'block';
+      }
+      updateSortUiControls();
+
+      function syncDomainTabsUi() {
+        if (!domainFilterGroup) return;
+        domainFilterGroup.querySelectorAll('.ac-domain-btn').forEach(btn => {
+          const isMatch = btn.getAttribute('data-domain') === state.domain;
+          btn.classList.toggle('active', isMatch);
+          btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+          btn.setAttribute('tabindex', isMatch ? '0' : '-1');
+        });
+      }
+      syncDomainTabsUi();
+
+      function syncUrlState() {
+        try {
+          const params = new URLSearchParams();
+          if (state.domain !== 'All') params.set('domain', state.domain);
+          if (state.searchQuery.trim() !== '') params.set('q', state.searchQuery.trim());
+          if (state.sortBy !== 'random') params.set('sort', state.sortBy);
+          if (state.currentPage > 1) params.set('page', String(state.currentPage));
+          const qs = params.toString();
+          const cleanHash = window.location.hash && !window.location.hash.includes('access_token=') ? window.location.hash : '';
+          const newUrl = window.location.pathname + (qs ? `?${qs}` : '') + cleanHash;
+          window.history.replaceState(null, '', newUrl);
+        } catch (e) {}
+      }
+
+      // --- 6. Helper: Toast, Inline Alerts & Status Strip ---
+      const toastEl = document.getElementById('acToast');
+      let toastTimer = null;
+      function showToast(message) {
+        if (!toastEl) return;
+        toastEl.textContent = message;
+        toastEl.classList.add('show');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove('show');
+        }, 4200);
+      }
+
+      function setInlineAlert(el, type, message) {
+        if (!el) return;
+        el.className = 'ac-inline-alert';
+        if (!message) {
+          el.textContent = '';
+          el.style.display = 'none';
+          return;
+        }
+        el.classList.add(type === 'success' ? 'success' : 'error');
+        el.textContent = message;
+        el.style.display = 'block';
+      }
+
+      function updateStatusStrip() {
+        if (!acStatusStrip || !acStatusText || !btnRetrySync) return;
+        if (state.isSyncing) {
+          acStatusStrip.className = 'ac-status-strip loading';
+          acStatusText.textContent = 'Syncing repository catalog & voter session with server...';
+          btnRetrySync.style.display = 'none';
+        } else if (state.syncError) {
+          acStatusStrip.className = 'ac-status-strip error';
+          acStatusText.textContent = state.syncError;
+          btnRetrySync.style.display = 'inline-flex';
+        } else {
+          acStatusStrip.className = 'ac-status-strip';
+          acStatusText.textContent = '';
+          btnRetrySync.style.display = 'none';
+        }
+      }
+
+      // --- 6B. Hydrate State from Backend (/api/aftercode/state) ---
+      function mergeServerRepositories(serverRepos) {
+        if (!Array.isArray(serverRepos)) return;
+        if (REPOSITORIES.length === 0) {
+          REPOSITORIES = serverRepos.map(normalizeRepositoryItem);
+        }
+        state.isLoadingInitialCatalog = false;
+        if (totalReposStatEl) {
+          totalReposStatEl.textContent = String(REPOSITORIES.length);
+        }
+        if (!state.randomOrderRankById && REPOSITORIES.length > 0) {
+          const map = new Map();
+          REPOSITORIES.forEach((r, idx) => map.set(r.id, idx + 1));
+          state.randomOrderRankById = map;
+        }
+      }
+
+      async function hydrateFromServer(showLoadingBanner = false) {
+        state.isSyncing = Boolean(showLoadingBanner);
+        state.syncError = null;
+        updateStatusStrip();
+
+        try {
+          // Check if returning from Supabase Google OAuth redirect with #access_token=...
+          if (window.location.hash && window.location.hash.includes('access_token=')) {
+            const hashParams = new URLSearchParams(window.location.hash.slice(1));
+            const accessToken = hashParams.get('access_token');
+            if (accessToken) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search);
+              const loginRes = await fetch('/api/aftercode/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'same-origin',
+                body: JSON.stringify({ accessToken })
+              });
+              const loginData = await loginRes.json();
+              if (loginData && loginData.message) {
+                showToast(loginData.message);
+              }
+            }
+          }
+
+          const res = await fetch('/api/aftercode/state', {
+            method: 'GET',
+            credentials: 'same-origin',
+            headers: { 'Accept': 'application/json' }
+          });
+          if (!res.ok) {
+            throw new Error(`Server returned status ${res.status}`);
+          }
+          const data = await res.json();
+          if (!data || !data.success) {
+            throw new Error((data && data.message) || 'Invalid server response');
+          }
+
+          if (data.repositories) {
+            mergeServerRepositories(data.repositories);
+          }
+          if (data.stats) {
+            if (registeredBuildersStatEl && typeof data.stats.registeredBuilders === 'number') {
+              registeredBuildersStatEl.textContent = String(data.stats.registeredBuilders);
+            }
+            if (totalReposStatEl && typeof data.stats.totalRepositories === 'number') {
+              totalReposStatEl.textContent = String(data.stats.totalRepositories);
+            }
+          }
+          if (data.votingWindow) {
+            state.votingWindow = data.votingWindow;
+          }
+          if (data.session) {
+            state.session = data.session;
+          }
+          if (data.authConfig) {
+            state.authConfig = data.authConfig;
+          }
+
+          state.isLoadingInitialCatalog = false;
+          state.isSyncing = false;
+          state.syncError = null;
+          updateStatusStrip();
+          renderSidebarStatus();
+          renderTable();
+          if (!state.initialHashChecked) {
+            state.initialHashChecked = true;
+            checkInitialRepoHash();
+          }
+        } catch (err) {
+          console.warn('[AfterCode] Failed to fetch server state:', err);
+          state.isLoadingInitialCatalog = false;
+          state.isSyncing = false;
+          state.syncError = 'Could not reach live voting backend — click Retry Sync to reconnect.';
+          updateStatusStrip();
+          renderTable();
+        }
+      }
+
+      if (btnRetrySync) {
+        btnRetrySync.addEventListener('click', () => {
+          hydrateFromServer(true);
+        });
+      }
+
+      // --- 7. Filter, Deduplicate & Sort Repositories ---
+      function getFilteredRepositories() {
+        let list = REPOSITORIES.slice();
+
+        // 1. Primary Domain Filter (each project has strictly one primaryDomain)
+        if (state.domain !== 'All') {
+          list = list.filter(item => item.primaryDomain === state.domain);
+        }
+
+        // 2. Fast Multi-field Search using precomputed _searchIndex
+        if (state.searchQuery.trim() !== '') {
+          const q = state.searchQuery.trim().toLowerCase();
+          list = list.filter(item => item._searchIndex.includes(q));
+        }
+
+        // 3. Per-Viewer Shuffled Order
+        if (!state.randomOrderRankById && REPOSITORIES.length > 0) {
+          generateRandomOrderMap();
+        }
+        if (state.randomOrderRankById) {
+          list.sort((a, b) => {
+            const rankA = state.randomOrderRankById.get(a.id) ?? a.recommendedRank;
+            const rankB = state.randomOrderRankById.get(b.id) ?? b.recommendedRank;
+            return rankA - rankB;
+          });
+        }
+
+        return list;
+      }
+
+      function resetAllFiltersAndSearch() {
+        state.searchQuery = '';
+        state.domain = 'All';
+        state.currentPage = 1;
+        if (repoSearchInput) repoSearchInput.value = '';
+        if (btnClearSearch) btnClearSearch.style.display = 'none';
+        syncDomainTabsUi();
+        renderTable();
+      }
+
+      // --- 8. Render Table & Pagination ---
+      const repoTableBody = document.getElementById('repoTableBody');
+      const resultsCountLabel = document.getElementById('resultsCountLabel');
+      const paginationNav = document.getElementById('paginationNav');
+
+      function renderTable() {
+        if (!repoTableBody) return;
+
+        if (state.isLoadingInitialCatalog && REPOSITORIES.length === 0) {
+          repoTableBody.innerHTML = `
+            <tr>
+              <td colspan="5">
+                <div class="ac-empty-state">
+                  <div class="ac-empty-title">Loading Submitted Repositories...</div>
+                  <div class="ac-empty-sub">Syncing official AfterCode 2026 repository catalog.</div>
+                </div>
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
+        const filtered = getFilteredRepositories();
+        const totalFiltered = filtered.length;
+
+        // Instant result count update
+        if (resultsCountLabel) {
+          resultsCountLabel.textContent = `${totalFiltered} result${totalFiltered === 1 ? '' : 's'}`;
+        }
+
+        const totalPages = Math.max(1, Math.ceil(totalFiltered / ITEMS_PER_PAGE));
+        if (state.currentPage > totalPages) {
+          state.currentPage = totalPages;
+        }
+        if (state.currentPage < 1) {
+          state.currentPage = 1;
+        }
+
+        syncUrlState();
+
+        const startIdx = (state.currentPage - 1) * ITEMS_PER_PAGE;
+        const pageItems = filtered.slice(startIdx, startIdx + ITEMS_PER_PAGE);
+
+        if (pageItems.length === 0) {
+          const activeFilterSummary = [];
+          if (state.domain !== 'All') activeFilterSummary.push(`domain "${state.domain}"`);
+          if (state.searchQuery.trim() !== '') activeFilterSummary.push(`query "${state.searchQuery.trim()}"`);
+          const filterText = activeFilterSummary.length > 0
+            ? `No repositories matched ${activeFilterSummary.join(' and ')}.`
+            : 'No repositories found.';
+
+          repoTableBody.innerHTML = `
+            <tr>
+              <td colspan="5">
+                <div class="ac-empty-state">
+                  <div class="ac-empty-title">No Matching Repositories</div>
+                  <div class="ac-empty-sub">${filterText}</div>
+                  <button type="button" class="ac-btn-secondary" data-reset-filters="true">
+                    CLEAR SEARCH &amp; FILTERS
+                  </button>
+                </div>
+              </td>
+            </tr>
+          `;
+          renderPagination(1);
+          return;
+        }
+
+        const votedRepoId = state.session?.vote?.repoId || null;
+        const hasAlreadyVoted = Boolean(votedRepoId);
+        const ownedRepoId = state.session?.user?.ownedRepoId || null;
+        const activeQueryNorm = state.searchQuery.trim().toLowerCase();
+
+        repoTableBody.innerHTML = pageItems.map((repo, idx) => {
+          const displayRank = startIdx + idx + 1;
+          const isVotedForThis = votedRepoId === repo.id;
+          const isOwnRepo = ownedRepoId === repo.id;
+
+          const repoAvatarUri = repo._repoAvatarUri;
+          const builderAvatarUri = repo._builderAvatarUri;
+
+          const techHtml = repo.technologies
+            .map(t => {
+              const isTechActive = activeQueryNorm === t.toLowerCase();
+              return `<button type="button" class="ac-tech-badge ${isTechActive ? 'active-tech' : ''}" data-tech-filter="${t}" title="Filter by technology: ${t}">${t}</button>`;
+            })
+            .join('');
+
+          let voteBtnHtml = '';
+          if (isVotedForThis) {
+            voteBtnHtml = `<button type="button" class="ac-vote-btn voted" data-vote-id="${repo.id}" aria-label="Voted for ${repo.name}">Voted &#10003;</button>`;
+          } else if (isOwnRepo) {
+            voteBtnHtml = `<button type="button" class="ac-vote-btn" data-vote-id="${repo.id}" title="Rule #3: You cannot vote for your own repository" aria-label="Cannot vote for your own repository ${repo.name}">Your Repo</button>`;
+          } else {
+            voteBtnHtml = `<button type="button" class="ac-vote-btn" data-vote-id="${repo.id}" ${hasAlreadyVoted ? 'disabled title="You have already used your 1 final vote"' : ''} aria-label="Vote for ${repo.name}">Vote <span>+</span></button>`;
+          }
+
+          return `
+            <tr class="${isVotedForThis ? 'voted-row' : ''}" data-row-id="${repo.id}">
+              <td class="ac-rank-cell">${displayRank}</td>
+              <td>
+                <div class="ac-repo-cell">
+                  <div class="ac-repo-avatar">
+                    <img src="${repoAvatarUri}" width="30" height="30" decoding="async" alt="${repo.name} avatar">
+                  </div>
+                  <div class="ac-repo-info">
+                    <div class="ac-repo-title-line">
+                      <button type="button" class="ac-repo-name-btn" data-detail-id="${repo.id}" title="Inspect ${repo.name} project idea and details">
+                        <span>${repo.name}</span>
+                      </button>
+                      <span class="ac-domain-tag-inline">${repo.primaryDomain}</span>
+                    </div>
+                    <div class="ac-repo-desc">${repo.description}</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="ac-builder-cell">
+                  <div class="ac-builder-avatar">
+                    <img src="${builderAvatarUri}" width="30" height="30" decoding="async" alt="${repo.builder} avatar">
+                  </div>
+                  <a href="${repo.builderGithubUrl}" target="_blank" rel="noopener noreferrer" class="ac-builder-link" title="View ${repo.builderName} (@${repo.builder}) on GitHub in a new tab">
+                    <span>${repo.builder}</span>
+                  </a>
+                </div>
+              </td>
+              <td>
+                <div class="ac-tech-list">${techHtml}</div>
+              </td>
+              <td>
+                <div class="ac-action-cell">
+                  ${voteBtnHtml}
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        renderPagination(totalPages);
+      }
+
+      function renderPagination(totalPages) {
+        if (!paginationNav) return;
+
+        const curr = state.currentPage;
+        let pages = [];
+
+        if (totalPages <= 6) {
+          for (let i = 1; i <= totalPages; i++) pages.push(i);
+        } else {
+          if (curr <= 4) {
+            pages = [1, 2, 3, 4, 5, '...', totalPages];
+          } else if (curr >= totalPages - 3) {
+            pages = [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+          } else {
+            pages = [1, '...', curr - 1, curr, curr + 1, '...', totalPages];
+          }
+        }
+
+        let html = `
+          <button type="button" class="ac-page-btn" data-page="${curr - 1}" ${curr <= 1 ? 'disabled' : ''} aria-label="Previous page">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+        `;
+
+        pages.forEach(p => {
+          if (p === '...') {
+            html += `<span class="ac-page-ellipsis" aria-hidden="true">&hellip;</span>`;
+          } else {
+            const isCurrent = p === curr;
+            html += `<button type="button" class="ac-page-btn ${isCurrent ? 'active' : ''}" data-page="${p}" aria-label="Page ${p}" ${isCurrent ? 'aria-current="page"' : ''}>${p}</button>`;
+          }
+        });
+
+        html += `
+          <button type="button" class="ac-page-btn" data-page="${curr + 1}" ${curr >= totalPages ? 'disabled' : ''} aria-label="Next page">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        `;
+
+        paginationNav.innerHTML = html;
+      }
+
+      // --- 9. Sidebar Voter Status Rendering (Driven by Server Session & Persisted Vote) ---
+      function renderSidebarStatus() {
+        const sidebarAuthHeading = document.getElementById('sidebarAuthHeading');
+        const voterAvatarBadge = document.getElementById('voterAvatarBadge');
+        const voterNameLabel = document.getElementById('voterNameLabel');
+        const voterEmailLabel = document.getElementById('voterEmailLabel');
+        const verifiedBanner = document.getElementById('verifiedBanner');
+        const verifiedBannerTitle = document.getElementById('verifiedBannerTitle');
+        const verifiedBannerSub = document.getElementById('verifiedBannerSub');
+        const btnSidebarSignIn = document.getElementById('btnSidebarSignIn');
+
+        const voteProgressCount = document.getElementById('voteProgressCount');
+        const voteProgressBar = document.getElementById('voteProgressBar');
+        const voteStatusTitle = document.getElementById('voteStatusTitle');
+        const voteStatusDesc = document.getElementById('voteStatusDesc');
+        const voteStatusBox = document.getElementById('voteStatusBox');
+
+        const session = state.session || { authenticated: false, eligible: false, user: null, vote: null };
+        const user = session.user;
+
+        if (!session.authenticated || !user) {
+          if (sidebarAuthHeading) sidebarAuthHeading.textContent = 'VOTER STATUS';
+          if (voterAvatarBadge) voterAvatarBadge.textContent = '?';
+          if (voterNameLabel) voterNameLabel.textContent = 'Not Signed In';
+          if (voterEmailLabel) voterEmailLabel.textContent = 'Sign in with your Unstop email';
+          if (verifiedBanner) {
+            verifiedBanner.className = 'ac-verified-banner unauth';
+          }
+          if (verifiedBannerTitle) verifiedBannerTitle.textContent = 'Unstop verification required';
+          if (verifiedBannerSub) {
+            verifiedBannerSub.textContent = 'Sign in with the email used for your AfterCode 2026 registration.';
+          }
+          if (btnSidebarSignIn) {
+            btnSidebarSignIn.style.display = 'flex';
+            btnSidebarSignIn.innerHTML = '<span>SIGN IN WITH UNSTOP EMAIL &rarr;</span>';
+          }
+        } else if (session.eligible) {
+          if (sidebarAuthHeading) sidebarAuthHeading.textContent = 'SIGNED IN';
+          if (voterAvatarBadge) {
+            voterAvatarBadge.textContent = (user.name || user.email || 'U').trim().charAt(0).toUpperCase();
+          }
+          if (voterNameLabel) voterNameLabel.textContent = user.name;
+          if (voterEmailLabel) voterEmailLabel.textContent = user.email;
+          if (verifiedBanner) {
+            verifiedBanner.className = 'ac-verified-banner';
+          }
+          if (verifiedBannerTitle) verifiedBannerTitle.textContent = 'Verified with Unstop';
+          if (verifiedBannerSub) {
+            verifiedBannerSub.textContent = user.registrationId
+              ? `Your account is eligible to vote (ID: ${user.registrationId}).`
+              : 'Your account is eligible to vote.';
+          }
+          if (btnSidebarSignIn) {
+            btnSidebarSignIn.style.display = 'none';
+          }
+        } else {
+          if (sidebarAuthHeading) sidebarAuthHeading.textContent = 'SIGNED IN (INELIGIBLE)';
+          if (voterAvatarBadge) {
+            voterAvatarBadge.textContent = (user.email || '!').trim().charAt(0).toUpperCase();
+          }
+          if (voterNameLabel) voterNameLabel.textContent = user.name || 'Unverified Account';
+          if (voterEmailLabel) voterEmailLabel.textContent = user.email;
+          if (verifiedBanner) {
+            verifiedBanner.className = 'ac-verified-banner ineligible';
+          }
+          if (verifiedBannerTitle) verifiedBannerTitle.textContent = 'Not Eligible to Vote';
+          if (verifiedBannerSub) {
+            verifiedBannerSub.textContent =
+              session.eligibilityReason || 'This email was not found in the official Unstop participant list.';
+          }
+          if (btnSidebarSignIn) {
+            btnSidebarSignIn.style.display = 'flex';
+            btnSidebarSignIn.innerHTML = '<span>SWITCH TO UNSTOP EMAIL &rarr;</span>';
+          }
+        }
+
+        const recordedVote = session.vote || null;
+        const votedRepo = recordedVote ? REPOSITORIES.find(r => r.id === recordedVote.repoId) : null;
+
+        if (recordedVote) {
+          const repoDisplayName = votedRepo ? votedRepo.name : recordedVote.repoName;
+          const builderDisplay = votedRepo ? `@${votedRepo.builder}` : 'the builder';
+          if (voteProgressCount) voteProgressCount.textContent = '1 / 1';
+          if (voteProgressBar) voteProgressBar.style.width = '100%';
+          if (voteStatusTitle) voteStatusTitle.textContent = `Voted for ${repoDisplayName}`;
+          if (voteStatusDesc) {
+            voteStatusDesc.textContent = `Your final community vote is permanently recorded in the backend for ${builderDisplay}'s repository.`;
+          }
+          if (voteStatusBox) {
+            voteStatusBox.style.backgroundColor = '#F0FDF4';
+            voteStatusBox.style.borderColor = '#BBF7D0';
+          }
+        } else {
+          if (voteProgressCount) voteProgressCount.textContent = '0 / 1';
+          if (voteProgressBar) voteProgressBar.style.width = '0%';
+
+          if (state.votingWindow && !state.votingWindow.isOpen) {
+            if (voteStatusTitle) {
+              voteStatusTitle.textContent =
+                state.votingWindow.status === 'NOT_STARTED'
+                  ? 'Voting opens Oct 11, 4:00 PM IST'
+                  : 'Voting window has closed';
+            }
+            if (voteStatusDesc) {
+              voteStatusDesc.textContent =
+                state.votingWindow.message ||
+                'Explore repositories and support a builder whose work inspires you.';
+            }
+          } else {
+            if (voteStatusTitle) voteStatusTitle.textContent = "You haven't voted yet.";
+            if (voteStatusDesc) {
+              voteStatusDesc.textContent =
+                'Explore repositories and support a builder whose work inspires you.';
+            }
+          }
+          if (voteStatusBox) {
+            voteStatusBox.style.backgroundColor = 'var(--ac-surface-subtle)';
+            voteStatusBox.style.borderColor = 'var(--ac-border-subtle)';
+          }
+        }
+      }
+
+      // --- 10. Event Listeners for Search, Sort, Randomize, Filter & Pagination ---
+      if (repoSearchInput) {
+        repoSearchInput.addEventListener('input', (e) => {
+          state.searchQuery = e.target.value;
+          state.currentPage = 1;
+          if (btnClearSearch) {
+            btnClearSearch.style.display = state.searchQuery.length > 0 ? 'block' : 'none';
+          }
+          renderTable();
+        });
+      }
+
+      if (btnClearSearch) {
+        btnClearSearch.addEventListener('click', () => {
+          state.searchQuery = '';
+          state.currentPage = 1;
+          if (repoSearchInput) {
+            repoSearchInput.value = '';
+            repoSearchInput.focus();
+          }
+          btnClearSearch.style.display = 'none';
+          renderTable();
+        });
+      }
+
+      if (repoSortSelect) {
+        repoSortSelect.addEventListener('change', (e) => {
+          const nextSort = e.target.value;
+          state.sortBy = nextSort;
+          state.currentPage = 1;
+          if (nextSort === 'random') {
+            generateRandomOrderMap();
+            showToast('Randomized repository display order.');
+          }
+          updateSortUiControls();
+          renderTable();
+        });
+      }
+
+      if (btnReshuffleOrder) {
+        btnReshuffleOrder.addEventListener('click', () => {
+          state.sortBy = 'random';
+          state.currentPage = 1;
+          generateRandomOrderMap();
+          updateSortUiControls();
+          renderTable();
+          showToast('Shuffled repository order.');
+        });
+      }
+
+      if (domainFilterGroup) {
+        domainFilterGroup.addEventListener('click', (e) => {
+          const btn = e.target.closest('.ac-domain-btn');
+          if (!btn) return;
+          const selectedDomain = btn.getAttribute('data-domain');
+          if (!selectedDomain) return;
+
+          state.domain = selectedDomain;
+          state.currentPage = 1;
+          syncDomainTabsUi();
+          renderTable();
+        });
+
+        // Keyboard ArrowLeft / ArrowRight navigation across domain tabs
+        domainFilterGroup.addEventListener('keydown', (e) => {
+          if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(e.key)) return;
+          const tabs = Array.from(domainFilterGroup.querySelectorAll('.ac-domain-btn'));
+          const currentIndex = tabs.indexOf(document.activeElement);
+          if (currentIndex === -1) return;
+
+          e.preventDefault();
+          let nextIndex = currentIndex;
+          if (e.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+          if (e.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+          if (e.key === 'Home') nextIndex = 0;
+          if (e.key === 'End') nextIndex = tabs.length - 1;
+
+          const targetTab = tabs[nextIndex];
+          if (targetTab) {
+            targetTab.focus();
+            targetTab.click();
+          }
+        });
+      }
+
+      if (paginationNav) {
+        paginationNav.addEventListener('click', (e) => {
+          const btn = e.target.closest('.ac-page-btn');
+          if (!btn || btn.disabled) return;
+          const targetPage = parseInt(btn.getAttribute('data-page'), 10);
+          if (!isNaN(targetPage) && targetPage >= 1) {
+            // Preserve searchQuery, domain, sortBy, and randomOrderRankById while paginating
+            state.currentPage = targetPage;
+            renderTable();
+            document.querySelector('.ac-controls-card')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      }
+
+      // --- 11. Table Actions: Vote, Details Preview Modal, Tech Filtering & More Menu ---
+      const voteConfirmModal = document.getElementById('voteConfirmModal');
+      const confirmRepoName = document.getElementById('confirmRepoName');
+      const confirmBuilderHandle = document.getElementById('confirmBuilderHandle');
+      const voteModalAlert = document.getElementById('voteModalAlert');
+      const btnConfirmVote = document.getElementById('btnConfirmVote');
+      const btnCancelVote = document.getElementById('btnCancelVote');
+      const btnCloseVoteModal = document.getElementById('btnCloseVoteModal');
+
+      const repoDetailModal = document.getElementById('repoDetailModal');
+      const detailModalCategory = document.getElementById('detailModalCategory');
+      const detailModalDomain = document.getElementById('detailModalDomain');
+      const detailModalTitle = document.getElementById('detailModalTitle');
+      const detailModalDesc = document.getElementById('detailModalDesc');
+      const detailModalRankBadge = document.getElementById('detailModalRankBadge');
+      const detailModalPreviewSummary = document.getElementById('detailModalPreviewSummary');
+      const detailModalPreviewHighlights = document.getElementById('detailModalPreviewHighlights');
+      const detailModalBuilder = document.getElementById('detailModalBuilder');
+      const detailModalTech = document.getElementById('detailModalTech');
+      const detailModalSubmitted = document.getElementById('detailModalSubmitted');
+      const detailModalGithub = document.getElementById('detailModalGithub');
+      const detailModalGithubBtn = document.getElementById('detailModalGithubBtn');
+      const btnCloseDetailModal = document.getElementById('btnCloseDetailModal');
+      const btnCloseDetailFooter = document.getElementById('btnCloseDetailFooter');
+      const btnVoteFromDetail = document.getElementById('btnVoteFromDetail');
+
+      function findRepoById(repoId) {
+        return REPOSITORIES.find(r => r.id === repoId) || null;
+      }
+
+      function filterByTechnology(techName) {
+        if (!techName) return;
+        const cleanTech = techName.trim();
+        if (state.searchQuery.trim().toLowerCase() === cleanTech.toLowerCase()) {
+          state.searchQuery = '';
+          if (repoSearchInput) repoSearchInput.value = '';
+          if (btnClearSearch) btnClearSearch.style.display = 'none';
+          showToast(`Cleared technology filter "${cleanTech}".`);
+        } else {
+          state.searchQuery = cleanTech;
+          if (repoSearchInput) repoSearchInput.value = cleanTech;
+          if (btnClearSearch) btnClearSearch.style.display = 'block';
+          showToast(`Filtering repositories by technology: ${cleanTech}`);
+        }
+        state.currentPage = 1;
+        renderTable();
+      }
+
+      function selectDomainFilter(domainName) {
+        if (!domainName || !VALID_DOMAINS.includes(domainName)) return;
+        state.domain = domainName;
+        state.currentPage = 1;
+        syncDomainTabsUi();
+        renderTable();
+        showToast(`Filtered by primary domain: ${domainName}`);
+      }
+
+      function initiateVote(repoId) {
+        const repo = findRepoById(repoId);
+        if (!repo) return;
+
+        state.lastFocusedElement = document.activeElement;
+
+        // If user is not signed in yet, open the authentication modal first
+        if (!state.session || !state.session.authenticated) {
+          state.pendingVoteRepoId = repo.id;
+          openAccountModal();
+          setInlineAlert(
+            document.getElementById('accountModalAlert'),
+            'error',
+            `Rule #1: Please sign in with your Unstop registered email to vote for "${repo.name}".`
+          );
+          return;
+        }
+
+        state.pendingVoteRepoId = repo.id;
+        setInlineAlert(voteModalAlert, null, '');
+        if (confirmRepoName) confirmRepoName.textContent = repo.name;
+        if (confirmBuilderHandle) confirmBuilderHandle.textContent = repo.builder;
+        if (btnConfirmVote) {
+          btnConfirmVote.disabled = false;
+          btnConfirmVote.innerHTML = 'CONFIRM FINAL VOTE &rarr;';
+        }
+        if (voteConfirmModal) {
+          voteConfirmModal.classList.add('open');
+          setTimeout(() => btnConfirmVote?.focus(), 40);
+        }
+      }
+
+      function openRepoDetails(repoId) {
+        const repo = findRepoById(repoId);
+        if (!repo) return;
+
+        state.lastFocusedElement = document.activeElement;
+
+        if (detailModalCategory) detailModalCategory.textContent = '// ' + repo.primaryDomain.toUpperCase();
+        if (detailModalDomain) detailModalDomain.textContent = repo.primaryDomain;
+        if (detailModalTitle) detailModalTitle.textContent = repo.name;
+        if (detailModalDesc) detailModalDesc.textContent = repo.description;
+        if (detailModalRankBadge) detailModalRankBadge.textContent = `VERIFIED SUBMISSION`;
+        if (detailModalPreviewSummary) detailModalPreviewSummary.textContent = repo.previewSummary;
+        if (detailModalPreviewHighlights) {
+          detailModalPreviewHighlights.innerHTML = (repo.highlights || [])
+            .map(h => `<li>${h}</li>`)
+            .join('');
+        }
+        if (detailModalBuilder) {
+          detailModalBuilder.textContent = `${repo.builderName} (@${repo.builder}) ↗`;
+          detailModalBuilder.href = repo.builderGithubUrl;
+        }
+        const detailModalGithubProfile = document.getElementById('detailModalGithubProfile');
+        if (detailModalGithubProfile && repo.builderGithubUrl) {
+          detailModalGithubProfile.textContent = `${repo.builderGithubUrl.replace(/^https?:\/\//, '')} ↗`;
+          detailModalGithubProfile.href = repo.builderGithubUrl;
+        }
+        if (detailModalTech) {
+          detailModalTech.innerHTML = repo.technologies
+            .map(t => `<button type="button" class="ac-tech-badge" data-modal-tech="${t}" title="Search by ${t}">${t}</button>`)
+            .join('');
+        }
+        if (detailModalSubmitted) {
+          const dt = new Date(repo.submittedAt);
+          detailModalSubmitted.textContent = dt.toLocaleString('en-IN', {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          }) + ' IST';
+        }
+
+        const votedRepoId = state.session?.vote?.repoId || null;
+        const ownedRepoId = state.session?.user?.ownedRepoId || null;
+        if (btnVoteFromDetail) {
+          btnVoteFromDetail.setAttribute('data-target-repo', repo.id);
+          if (votedRepoId === repo.id) {
+            btnVoteFromDetail.textContent = 'VOTED ✓';
+            btnVoteFromDetail.disabled = true;
+          } else if (ownedRepoId === repo.id) {
+            btnVoteFromDetail.textContent = 'YOUR REPOSITORY';
+            btnVoteFromDetail.disabled = true;
+          } else if (votedRepoId) {
+            btnVoteFromDetail.textContent = 'VOTE ALREADY USED';
+            btnVoteFromDetail.disabled = true;
+          } else {
+            btnVoteFromDetail.textContent = 'VOTE FOR REPOSITORY +';
+            btnVoteFromDetail.disabled = false;
+          }
+        }
+
+        if (repoDetailModal) {
+          repoDetailModal.classList.add('open');
+          setTimeout(() => (btnVoteFromDetail && !btnVoteFromDetail.disabled ? btnVoteFromDetail : btnCloseDetailFooter)?.focus(), 40);
+        }
+      }
+
+      if (detailModalTech) {
+        detailModalTech.addEventListener('click', (e) => {
+          const techBtn = e.target.closest('[data-modal-tech]');
+          if (!techBtn) return;
+          const tech = techBtn.getAttribute('data-modal-tech');
+          closeDetailModal();
+          filterByTechnology(tech);
+        });
+      }
+
+      if (repoTableBody) {
+        repoTableBody.addEventListener('click', (e) => {
+          const resetBtn = e.target.closest('[data-reset-filters]');
+          if (resetBtn) {
+            resetAllFiltersAndSearch();
+            return;
+          }
+
+          const techBtn = e.target.closest('[data-tech-filter]');
+          if (techBtn) {
+            const tech = techBtn.getAttribute('data-tech-filter');
+            filterByTechnology(tech);
+            return;
+          }
+
+          const voteBtn = e.target.closest('[data-vote-id]');
+          if (voteBtn) {
+            const id = voteBtn.getAttribute('data-vote-id');
+            initiateVote(id);
+            return;
+          }
+
+          const detailBtn = e.target.closest('[data-detail-id]');
+          if (detailBtn) {
+            const id = detailBtn.getAttribute('data-detail-id');
+            closeAllPopovers();
+            openRepoDetails(id);
+            return;
+          }
+
+          const domainBtn = e.target.closest('[data-filter-domain]');
+          if (domainBtn) {
+            const domainName = domainBtn.getAttribute('data-filter-domain');
+            closeAllPopovers();
+            selectDomainFilter(domainName);
+            return;
+          }
+
+          const copyBtn = e.target.closest('[data-copy-repo]');
+          if (copyBtn) {
+            const name = copyBtn.getAttribute('data-copy-repo');
+            const url = `${window.location.origin}/aftercode?q=${encodeURIComponent(name)}#${encodeURIComponent(name)}`;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(url).catch(() => {});
+            }
+            closeAllPopovers();
+            showToast(`Copied share link for ${name} to clipboard.`);
+            return;
+          }
+
+          const moreBtn = e.target.closest('[data-more-id]');
+          if (moreBtn) {
+            e.stopPropagation();
+            const id = moreBtn.getAttribute('data-more-id');
+            const menu = document.getElementById(`popover-${id}`);
+            const wasOpen = menu && menu.classList.contains('open');
+            closeAllPopovers();
+            if (menu && !wasOpen) {
+              menu.classList.add('open');
+              moreBtn.setAttribute('aria-expanded', 'true');
+              const firstItem = menu.querySelector('[role="menuitem"]');
+              if (firstItem) setTimeout(() => firstItem.focus(), 20);
+            }
+          }
+        });
+
+        // Keyboard navigation inside open row popover menu (ArrowDown, ArrowUp, Escape)
+        repoTableBody.addEventListener('keydown', (e) => {
+          const openMenu = e.target.closest('.ac-popover-menu.open');
+          if (!openMenu) return;
+          const items = Array.from(openMenu.querySelectorAll('[role="menuitem"]'));
+          if (items.length === 0) return;
+          const idx = items.indexOf(document.activeElement);
+
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            items[(idx + 1) % items.length].focus();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            items[(idx - 1 + items.length) % items.length].focus();
+          } else if (e.key === 'Escape') {
+            e.preventDefault();
+            const repoId = openMenu.id.replace('popover-', '');
+            closeAllPopovers();
+            const trigger = repoTableBody.querySelector(`[data-more-id="${repoId}"]`);
+            if (trigger) trigger.focus();
+          }
+        });
+      }
+
+      function closeAllPopovers() {
+        document.querySelectorAll('.ac-popover-menu.open').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.ac-more-btn[aria-expanded="true"]').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+      }
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.ac-action-cell')) {
+          closeAllPopovers();
+        }
+      });
+
+      function restorePreviousFocus() {
+        if (state.lastFocusedElement && typeof state.lastFocusedElement.focus === 'function') {
+          try {
+            state.lastFocusedElement.focus();
+          } catch (e) {}
+          state.lastFocusedElement = null;
+        }
+      }
+
+      // Confirm Vote Modal Handlers (Atomic Server Submission via POST /api/aftercode/vote)
+      function closeVoteModal() {
+        const wasOpen = voteConfirmModal && voteConfirmModal.classList.contains('open');
+        if (voteConfirmModal) voteConfirmModal.classList.remove('open');
+        setInlineAlert(voteModalAlert, null, '');
+        state.pendingVoteRepoId = null;
+        if (wasOpen) restorePreviousFocus();
+      }
+
+      if (btnCancelVote) btnCancelVote.addEventListener('click', closeVoteModal);
+      if (btnCloseVoteModal) btnCloseVoteModal.addEventListener('click', closeVoteModal);
+
+      if (btnConfirmVote) {
+        btnConfirmVote.addEventListener('click', async () => {
+          if (!state.pendingVoteRepoId || state.isSubmittingVote) return;
+          state.isSubmittingVote = true;
+          btnConfirmVote.disabled = true;
+          btnConfirmVote.textContent = 'SUBMITTING...';
+          setInlineAlert(voteModalAlert, null, '');
+
+          try {
+            const res = await fetch('/api/aftercode/vote', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              credentials: 'same-origin',
+              body: JSON.stringify({ repoId: state.pendingVoteRepoId })
+            });
+            const data = await res.json();
+
+            if (data.repositories) {
+              mergeServerRepositories(data.repositories);
+            }
+            if (data.session) {
+              state.session = data.session;
+            }
+
+            renderSidebarStatus();
+            renderTable();
+
+            if (res.ok && data.success) {
+              closeVoteModal();
+              showToast(data.message || 'Your final vote has been recorded!');
+            } else {
+              // Server rejected vote (window closed/not started, self-vote, ineligible, or duplicate)
+              setInlineAlert(voteModalAlert, 'error', data.message || 'Vote could not be submitted.');
+              showToast(data.message || 'Vote rejected by server.');
+            }
+          } catch (err) {
+            setInlineAlert(
+              voteModalAlert,
+              'error',
+              'Network error communicating with voting server. Your vote was not consumed.'
+            );
+          } finally {
+            state.isSubmittingVote = false;
+            if (btnConfirmVote) {
+              btnConfirmVote.disabled = false;
+              btnConfirmVote.innerHTML = 'CONFIRM FINAL VOTE &rarr;';
+            }
+          }
+        });
+      }
+
+      // Detail Modal Handlers
+      function closeDetailModal() {
+        const wasOpen = repoDetailModal && repoDetailModal.classList.contains('open');
+        if (repoDetailModal) repoDetailModal.classList.remove('open');
+        if (wasOpen) restorePreviousFocus();
+      }
+      if (btnCloseDetailModal) btnCloseDetailModal.addEventListener('click', closeDetailModal);
+      if (btnCloseDetailFooter) btnCloseDetailFooter.addEventListener('click', closeDetailModal);
+      if (btnVoteFromDetail) {
+        btnVoteFromDetail.addEventListener('click', () => {
+          const id = btnVoteFromDetail.getAttribute('data-target-repo');
+          closeDetailModal();
+          if (id) initiateVote(id);
+        });
+      }
+
+      // Account / Unstop & Google Auth Modal Handlers
+      const accountModal = document.getElementById('accountModal');
+      const accountModalAlert = document.getElementById('accountModalAlert');
+      const btnSwitchAccount = document.getElementById('btnSwitchAccount');
+      const btnSidebarSignIn = document.getElementById('btnSidebarSignIn');
+      const btnCloseAccountModal = document.getElementById('btnCloseAccountModal');
+      const btnCancelAccountModal = document.getElementById('btnCancelAccountModal');
+      const btnSaveVoterSession = document.getElementById('btnSaveVoterSession');
+      const btnSignOutSession = document.getElementById('btnSignOutSession');
+      const btnGoogleSignIn = document.getElementById('btnGoogleSignIn');
+      const inputVoterEmail = document.getElementById('inputVoterEmail');
+      const inputVoterRegId = document.getElementById('inputVoterRegId');
+
+      function openAccountModal() {
+        state.lastFocusedElement = document.activeElement;
+        setInlineAlert(accountModalAlert, null, '');
+        if (state.session && state.session.authenticated && state.session.user) {
+          if (inputVoterEmail) inputVoterEmail.value = state.session.user.email || '';
+          if (inputVoterRegId) inputVoterRegId.value = state.session.user.registrationId || '';
+          if (btnSignOutSession) btnSignOutSession.style.display = 'inline-flex';
+        } else {
+          if (btnSignOutSession) btnSignOutSession.style.display = 'none';
+        }
+        if (accountModal) {
+          accountModal.classList.add('open');
+          setTimeout(() => inputVoterEmail?.focus(), 40);
+        }
+      }
+
+      function closeAccountModal() {
+        const wasOpen = accountModal && accountModal.classList.contains('open');
+        if (accountModal) accountModal.classList.remove('open');
+        setInlineAlert(accountModalAlert, null, '');
+        if (wasOpen) restorePreviousFocus();
+      }
+
+      if (btnSwitchAccount) btnSwitchAccount.addEventListener('click', openAccountModal);
+      if (btnSidebarSignIn) btnSidebarSignIn.addEventListener('click', openAccountModal);
+      if (btnCloseAccountModal) btnCloseAccountModal.addEventListener('click', closeAccountModal);
+      if (btnCancelAccountModal) btnCancelAccountModal.addEventListener('click', closeAccountModal);
+
+      // Google OAuth via Existing Supabase Project
+      if (btnGoogleSignIn) {
+        btnGoogleSignIn.addEventListener('click', () => {
+          if (state.authConfig && state.authConfig.googleOAuthConfigured && state.authConfig.supabaseUrl) {
+            const redirectTo = encodeURIComponent(window.location.origin + '/aftercode');
+            window.location.href = `${state.authConfig.supabaseUrl}/auth/v1/authorize?provider=google&redirect_to=${redirectTo}`;
+          } else {
+            setInlineAlert(
+              accountModalAlert,
+              'error',
+              'Google OAuth client redirect requires NEXT_PUBLIC_SUPABASE_ANON_KEY and Google Provider enabled in Supabase Auth. Please sign in below using your Unstop Registered Email.'
+            );
+          }
+        });
+      }
+
+      // Submit Unstop Email on Enter key inside inputs
+      [inputVoterEmail, inputVoterRegId].forEach(inp => {
+        if (!inp) return;
+        inp.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            btnSaveVoterSession?.click();
+          }
+        });
+      });
+
+      // Sign in with Unstop Registered Email (Validated against server CSV)
+      if (btnSaveVoterSession) {
+        btnSaveVoterSession.addEventListener('click', async () => {
+          const emailVal = inputVoterEmail ? inputVoterEmail.value.trim() : '';
+          const regIdVal = inputVoterRegId ? inputVoterRegId.value.trim() : '';
+
+          if (!emailVal) {
+            setInlineAlert(accountModalAlert, 'error', 'Please enter the email address used for your Unstop registration.');
+            return;
+          }
+
+          btnSaveVoterSession.disabled = true;
+          btnSaveVoterSession.textContent = 'VERIFYING...';
+          setInlineAlert(accountModalAlert, null, '');
+
+          try {
+            const res = await fetch('/api/aftercode/auth/login', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              credentials: 'same-origin',
+              body: JSON.stringify({
+                email: emailVal,
+                registrationId: regIdVal || undefined
+              })
+            });
+            const data = await res.json();
+
+            if (!res.ok || !data.success) {
+              setInlineAlert(accountModalAlert, 'error', data.message || 'Verification failed.');
+              return;
+            }
+
+            state.session = data.session;
+            renderSidebarStatus();
+            renderTable();
+
+            if (state.session.eligible) {
+              showToast(data.message || `Verified with Unstop as ${state.session.user.name}.`);
+              closeAccountModal();
+              // If user clicked Vote before signing in, open the vote modal for that repository
+              if (state.pendingVoteRepoId) {
+                const pendingId = state.pendingVoteRepoId;
+                state.pendingVoteRepoId = null;
+                initiateVote(pendingId);
+              }
+            } else {
+              setInlineAlert(
+                accountModalAlert,
+                'error',
+                data.message || 'Signed in, but this email is not eligible to vote.'
+              );
+              showToast(data.message || 'Account is not in the official Unstop participant list.');
+            }
+          } catch (err) {
+            setInlineAlert(accountModalAlert, 'error', 'Network error while verifying with server.');
+          } finally {
+            btnSaveVoterSession.disabled = false;
+            btnSaveVoterSession.innerHTML = 'VERIFY &amp; SIGN IN &rarr;';
+          }
+        });
+      }
+
+      if (btnSignOutSession) {
+        btnSignOutSession.addEventListener('click', async () => {
+          try {
+            await fetch('/api/aftercode/auth/logout', {
+              method: 'POST',
+              credentials: 'same-origin'
+            });
+          } catch (e) {}
+          state.session = {
+            authenticated: false,
+            eligible: false,
+            eligibilityReason: '',
+            user: null,
+            vote: null
+          };
+          if (inputVoterEmail) inputVoterEmail.value = '';
+          if (inputVoterRegId) inputVoterRegId.value = '';
+          closeAccountModal();
+          renderSidebarStatus();
+          renderTable();
+          showToast('Signed out of AfterCode voting session.');
+        });
+      }
+
+      // Close modals on backdrop click or Escape
+      [voteConfirmModal, repoDetailModal, accountModal].forEach(modal => {
+        if (!modal) return;
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            if (modal === voteConfirmModal) closeVoteModal();
+            else if (modal === repoDetailModal) closeDetailModal();
+            else if (modal === accountModal) closeAccountModal();
+          }
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeAllPopovers();
+          closeVoteModal();
+          closeDetailModal();
+          closeAccountModal();
+          closeDrawer();
+        }
+      });
+
+      // Check if URL hash points to a specific repository name (e.g. /aftercode#mindmesh)
+      function checkInitialRepoHash() {
+        try {
+          const rawHash = (window.location.hash || '').replace(/^#/, '').trim().toLowerCase();
+          if (!rawHash || rawHash.includes('access_token=')) return;
+          const target = REPOSITORIES.find(r => r.name.toLowerCase() === rawHash || r.id.toLowerCase() === rawHash);
+          if (target) {
+            openRepoDetails(target.id);
+          }
+        } catch (e) {}
+      }
+
+      // Initial Render & Server Hydration (silent initial sync prevents layout shift)
+      renderSidebarStatus();
+      renderTable();
+      checkInitialRepoHash();
+      hydrateFromServer(false);
+    });
+  </script>
+</body>
+</html>
